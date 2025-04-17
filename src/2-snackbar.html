@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/balloon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <link rel="stylesheet" href="./css/2-snackbar.css" />
+  </head>
+  <body>
+    <form class="form">
+      <label class="lab">
+        Delay (ms)
+        <input class="inp" type="number" name="delay" required />
+      </label>
+
+      <fieldset class="field">
+        <legend class="legend">State</legend>
+        <label class="radio-lab">
+          <input
+            class="radio-ful"
+            type="radio"
+            name="state"
+            value="fulfilled"
+            required
+          />
+          Fulfilled
+        </label>
+        <label class="radio-lab">
+          <input
+            class="radio-rej"
+            type="radio"
+            name="state"
+            value="rejected"
+            required
+          />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button class="btn" type="submit">Create notification</button>
+    </form>
+    <script type="module" src="./js/2-snackbar.js"></script>
+  </body>
+</html>
